@@ -6,7 +6,7 @@
 4- Qual é o preço médio dos produtos em cada categoria?
 5- Mostre as categorias com mais de 5 produtos.
 6- Qual é o valor total de estoque em cada categoria (considerando quantidade * preço)?
-7- Mostre as categorias onde o valor total de estoque é superior a 500.
+7- Mostre as categorias onde o valor total de estoque é superior a 2.
 8- Quantos clientes foram cadastrados em cada ano?
 9- Qual é a quantidade média de estoque por categoria, considerando apenas categorias com estoque médio acima de 20 unidades?
 10- Mostre a quantidade mínima e máxima de estoque de produtos por categoria.
