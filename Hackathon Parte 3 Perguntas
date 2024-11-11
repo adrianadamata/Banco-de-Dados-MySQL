@@ -4,7 +4,7 @@
 2- Qual é a média de idade dos clientes em cada cidade?
 3- Quantos produtos existem em cada categoria?
 4- Qual é o preço médio dos produtos em cada categoria?
-5- Mostre as categorias com mais de 5 produtos.
+5- Mostre as categorias com mais de 10 produtos.
 6- Qual é o valor total de estoque em cada categoria (considerando quantidade * preço)?
 7- Mostre as categorias onde o valor total de estoque é superior a 2.
 8- Quantos clientes foram cadastrados em cada ano?
