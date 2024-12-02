@@ -1,0 +1,27 @@
+-- Inserir Alunos
+INSERT INTO tbAluno (matricula_aluno, nome_aluno, serie_aluno)
+VALUES 
+(1, 'João Silva', '1º ano'),
+(2, 'Ana Clara', '2º ano'),
+(3, 'Lucas Pereira', '3º ano');
+
+-- Inserir Professores
+INSERT INTO tbProfessor (matricula_professor, nome_professor, disciplina)
+VALUES 
+(1, 'Geanilson', 'Matemática'),
+(2, 'Bruno BO', 'Filosofia'),
+(3, 'Natália', 'Português');
+
+-- Inserir Eventos
+INSERT INTO tbEvento (nome_evento, data_evento)
+VALUES 
+('SICOOPES', '2024-09-20'),
+('SICAT', '2024-12-10');
+
+-- Inserir Participações
+INSERT INTO tbParticipacao (id_evento_FK, matricula_aluno_FK, matricula_professor_FK)
+VALUES 
+(1, 1, 1),
+(1, 2, NULL),
+(2, 3, 2),
+(2, NULL, 3);
