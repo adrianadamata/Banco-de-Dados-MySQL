@@ -1,0 +1,34 @@
+CREATE DATABASE escola_eventos;
+USE escola_eventos;
+
+-- Tabela de Alunos
+CREATE TABLE tbAluno (
+    matricula_aluno INT PRIMARY KEY,
+    nome_aluno VARCHAR(100),
+    serie_aluno VARCHAR(20)
+);
+
+-- Tabela de Professores
+CREATE TABLE tbProfessor (
+    matricula_professor INT PRIMARY KEY,
+    nome_professor VARCHAR(100),
+    disciplina VARCHAR(50)
+);
+
+-- Tabela de Eventos
+CREATE TABLE tbEvento (
+    id_evento INT PRIMARY KEY AUTO_INCREMENT,
+    nome_evento VARCHAR(100),
+    data_evento DATE
+);
+
+-- Tabela de Participação
+CREATE TABLE tbParticipacao (
+    id_participacao INT PRIMARY KEY AUTO_INCREMENT,
+    id_evento_FK INT,
+    matricula_aluno_FK INT,
+    matricula_professor_FK INT,
+    FOREIGN KEY (id_evento_FK) REFERENCES tbEvento(id_evento),
+    FOREIGN KEY (matricula_aluno_FK) REFERENCES tbAluno(matricula_aluno),
+    FOREIGN KEY (matricula_professor_FK) REFERENCES tbProfessor(matricula_professor)
+);
