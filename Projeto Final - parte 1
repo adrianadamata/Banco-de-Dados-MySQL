@@ -1,0 +1,35 @@
+CREATE DATABASE livraria;
+USE livraria;
+
+-- Tabela de Autores
+CREATE TABLE tbAutor (
+    id_autor INT AUTO_INCREMENT PRIMARY KEY,
+    nome_autor VARCHAR(100)
+);
+
+-- Tabela de Livros
+CREATE TABLE tbLivro (
+    id_livro INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(100),
+    preco DECIMAL(10, 2),
+    id_autor_FK INT,
+    FOREIGN KEY (id_autor_FK) REFERENCES tbAutor(id_autor)
+);
+
+-- Tabela de Clientes
+CREATE TABLE tbCliente (
+    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+    nome_cliente VARCHAR(100),
+    telefone_cliente VARCHAR(15)
+);
+
+-- Tabela de Vendas
+CREATE TABLE tbVenda (
+    id_venda INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente_FK INT,
+    id_livro_FK INT,
+    quantidade INT,
+    data_venda DATE,
+    FOREIGN KEY (id_cliente_FK) REFERENCES tbCliente(id_cliente),
+    FOREIGN KEY (id_livro_FK) REFERENCES tbLivro(id_livro)
+);
