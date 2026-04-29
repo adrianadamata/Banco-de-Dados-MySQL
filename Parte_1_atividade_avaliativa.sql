@@ -1,21 +1,21 @@
 CREATE DATABASE atividade_avaliativa;
 USE atividade_avaliativa;
 
-CREATE TABLE tbProfessor (
-    matricula_professor INT PRIMARY KEY,
-    nome_professor VARCHAR(100),
-    telefone_professor VARCHAR(15)
+CREATE TABLE tbMedico (
+matricula_medico INT PRIMARY KEY,
+nome_medico VARCHAR(100),
+telefone_medico VARCHAR(15)
 );
 
-CREATE TABLE tbAluno (
-    matricula_aluno INT PRIMARY KEY,
-    nome_aluno VARCHAR(100),
-    telefone_aluno VARCHAR(15)
+CREATE TABLE tbPaciente (
+matricula_paciente INT PRIMARY KEY,
+nome_paciente VARCHAR(100),
+telefone_paciente VARCHAR(15)
 );
 
-CREATE TABLE tbDisciplina (
-    codigo_disciplina INT AUTO_INCREMENT PRIMARY KEY,
-    nome_disciplina VARCHAR(50),
-    matricula_professor_FK INT,
-    FOREIGN KEY (matricula_professor_FK) REFERENCES tbProfessor(matricula_professor)
+CREATE TABLE tbConsulta (
+codigo_consulta INT AUTO_INCREMENT PRIMARY KEY,
+descricao_consulta VARCHAR(50),
+matricula_medico_FK INT,
+FOREIGN KEY (matricula_medico_FK) REFERENCES tbMedico(matricula_medico)
 );
