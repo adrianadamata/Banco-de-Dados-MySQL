@@ -1,4 +1,4 @@
-USE TechStore;
+USE TechStore1;
 
 -- Inserir dados na tabela 'clientes' com idades entre 18 e 20 anos
 INSERT INTO clientes (id_cliente, nome, cidade, idade, data_cadastro)
