@@ -1,6 +1,6 @@
 -- Criar o banco de dados
-CREATE DATABASE TechStore;
-USE TechStore;
+CREATE DATABASE TechStore1;
+USE TechStore1;
 
 -- Criar a tabela 'clientes'
 CREATE TABLE clientes (
