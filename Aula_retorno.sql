@@ -13,6 +13,13 @@ CREATE TABLE tbParticipacao (
     FOREIGN KEY (matricula_aluno_FK) REFERENCES tbAluno(matricula)
 );
 
-INSERT INTO tbAluno VALUES (101, 'Ana Silva'), (102, 'Carlos Souza'), (103, 'Maria Oliveira');
-INSERT INTO tbParticipacao (matricula_aluno_FK, nome_evento) VALUES 
-(101, 'Feira de Ciências'), (101, 'Hackathon SQL'), (102, 'Feira de Ciências');
+INSERT INTO tbAluno 
+VALUES 
+(101, 'Ana Silva'), 
+(102, 'Carlos Souza'), 
+(103, 'Maria Oliveira');
+INSERT INTO tbParticipacao (matricula_aluno_FK, nome_evento) 
+VALUES 
+(101, 'Feira de Ciências'), 
+(101, 'Hackathon SQL'), 
+(102, 'Feira de Ciências');
