@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS db_gincana_teste;
+CREATE DATABASE IF NOT EXISTS db_gincana_simples;
 USE db_gincana_simples;
 
 -- Tabela de Suspeitos
