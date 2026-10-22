@@ -82,7 +82,7 @@ INSERT INTO tbAcessos (id_acesso, id_suspeito_FK, data_hora, local_acesso, entra
 -- 3. DADOS BANCÁRIOS (18 Registros)
 -- saque_deposito: 1 = Depósito, 0 = Saque
 -- =========================================================
-INSERT INTO tbDadosBancarios (id_movimentacao, id_suspeito_FK, data_movimentacao, saque_deposito, valor_movimentacao, descricao) VALUES
+INSERT INTO tbDadosBancarios (id_movimentacao, id_suspeito_FK, data_movimentacao, saque_deposito, valor, descricao) VALUES
 (1, 1, '2026-10-10', 1, 1200.00, 'Pagamento Bolsa Estágio'),
 (2, 1, '2026-10-14', 0, 150.00, 'Compra Lanchonete'),
 (3, 2, '2026-10-12', 0, 45000.00, 'Compra em Leilão de Arte'),
