@@ -1,6 +1,7 @@
 USE Detetive;
 
 -- Limpa dados anteriores respeitando as chaves estrangeiras.
+-- Definições
 SET FOREIGN_KEY_CHECKS = 0;
 TRUNCATE TABLE tbDepoimentos;
 TRUNCATE TABLE tbEvidencias;
